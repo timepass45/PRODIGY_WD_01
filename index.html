@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Culture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <table class="navbar-table" cellspacing="10">
+            <tr>
+                <td>
+                    <img style="height: 100px; width: 100px; border-radius: 50px;" src="images/logo.jpg" alt="logo-jpg" srcset="">
+                </td>
+                <td>
+                    <h1 style="text-align: left;">Coffee Culture</h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Menu</h2>
+        <table class="container-table">
+            <tr>
+                <th>Coffee</th>
+                <th>Price</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>Americano</td>
+                <td>$2.50</td>
+                <td><img src="images/americano.jpg" alt="Americano" class="coffee-image"></td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>$3.00</td>
+                <td><img src="images/latte.jpg" alt="Latte" class="coffee-image"></td>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>$3.50</td>
+                <td><img src="images/cappuccino.jpg" alt="Cappuccino" class="coffee-image"></td>
+            </tr>
+        </table>
+        <h2>Order</h2>
+        <form>
+            <label for="coffee-type">Select Coffee Type:</label>
+            <select id="coffee-type" name="coffee-type" class="coffee-type-select">
+                <option value="americano">Americano</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+            </select>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <br>
+            <p>Total Price: <span id="total-price">$2.50</span></p>
+            <button type="submit" class="order-button">Place Order</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
